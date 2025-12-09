@@ -1,39 +1,36 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Shiny Leelo-Fulffy Viewer</title>
 
-  <!-- Model Viewer Library -->
   <script type="module"
-    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
-  </script>
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
   <style>
     body {
       margin: 0;
-      height: 100vh;
-      background: #f3f3f3;
+      background: transparent;
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 100vh;
+      overflow: hidden;
     }
     model-viewer {
-      width: 90vw;
-      height: 90vh;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      width: 100vw;
+      height: 100vh;
+      background: #ffffff;
     }
   </style>
 </head>
 
 <body>
   <model-viewer src="Shiny_Leelo_Fulffy.glb"
-                alt="Shiny Leelo-Fulffy 3D Model"
-                auto-rotate
+                alt="Shiny Leelo-Fulffy Model"
                 camera-controls
+                auto-rotate
                 exposure="1"
                 shadow-intensity="1"
                 ar>
